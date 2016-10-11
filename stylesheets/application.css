@@ -958,6 +958,37 @@ div.details {padding: 20px !important;}
   }
 }
 
+#main #sidebar {
+    overflow: visible;
+    width: 25%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding-left: 20px
+}
+
+#main #sidebar .sidebar_wrapper {
+    min-width: 600px
+}
+
+.sidebar_caller {
+    position: fixed;
+    bottom: 30px;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    z-index: 11;
+    transition: .1s;
+    background: url(../images/svg/sidebar_arrow_close.svg) center no-repeat #3d454c;
+    background-size: 15px 15px;
+    cursor: pointer
+}
+
+.sidebar_caller.opened {
+    right: 0
+}
+
 #main #sidebar.opened .sidebar_closer {
     border-left: 1px solid #ECECEC;
     border-top: 1px solid #ECECEC;
