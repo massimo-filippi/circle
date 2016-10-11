@@ -957,3 +957,31 @@ div.details {padding: 20px !important;}
     border-color: #000;
   }
 }
+
+#main #sidebar.opened .sidebar_closer {
+    border-left: 1px solid #ECECEC;
+    border-top: 1px solid #ECECEC;
+    background-color: #FFF;
+    cursor: pointer
+}
+
+#main .sidebar_closer {
+    line-height: 50px;
+    height: 50px;
+    margin-left: -21px;
+    padding-left: 21px;
+    font-size: 13px;
+    color: #666;
+    border-bottom: 1px solid #ECECEC;
+    transition: .3s;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    background-image: url(../images/svg/sidebar_arrow_open.svg);
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px
+}
